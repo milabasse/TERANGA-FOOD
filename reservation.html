@@ -1,12 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+<style>
+    body {
+        overflow-x: hidden;
+        background-color: #FFF7ED;
+    }
+
+    .formulaire {
+        width: 700px;
+        height: 850px;
+        margin: 0 auto;
+        border: 1px solid black;
+        border-radius: 30px;
+        padding: 40px;
+        margin-bottom: 30px;
+        background-color: rgb(251, 247, 243);
+    }
+
+    .both img {
+        overflow: hidden;
+        border-radius: 50%;
+        object-fit: cover;
+        width: 70px;
+        height: 70px;
+        margin-top: 10px;
+        margin-right: 17px;
+    }
+
+    .barre {
+        height: 4px;
+        width: 390px;
+        background-color: #D97706 ;
+        margin-left: 430px;
+        position: absolute;
+        top: 8px;
+        border-radius: 30px;
+    }
+
+    .num,
+    .fr2,
+    .date,
+    .heure,
+    .nombre,
+    .nom {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .both {
+        display: flex;
+    }
+
+    .both h2 {
+        font-weight: 900;
+        font-size: 35px;
+    }
+
+    .fr2 input,
+    .date input,
+    .heure input,
+    .nombre input,
+    .num input,
+    .nom input {
+        width: 100%;
+        height: 45px;
+        border-radius: 5px;
+        border: 1px solid black;
+        margin-top: 10px;
+        background-color: rgb(242, 235, 235);
+    }
+
+    .souvenir {
+        margin-top: 25px;
+        font-size: 19px;
+    }
+
+    .bouton {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn {
+        width: 300px;
+        height: 45px;
+        color: #D97706;
+    }
+
+    @media(max-width:430px) {
+        .formulaire {
+            width: 380px;
+            height: 730px;
+            margin: 0 auto;
+            border: 1px solid black;
+            border-radius: 30px;
+            padding: 40px;
+
+        }
+
+        .barre {
+            height: 4px;
+            width: 340px;
+            background-color: palevioletred;
+            margin-left: 70px;
+            position: absolute;
+            top: 8px;
+            border-radius: 30px;
+        }
+    }
+</style>
+</head>
+
 <body>
-    
+    <div class="barre"></div>
+    <div class="formulaire">
+        <div class="head">
+            <div class="both">
+                <img src="teranga.jpeg" alt="">
+                <h2>Teranga Food</h2>
+            </div>
+            <h1>BIENVENUE.</h1>
+            <h3>Réserver votre place pour une expérience culinaire inoubliable.</h3>
+        </div>
+        <div class="nom">
+            <form>
+                <label for="nomcomplet">👤 VOTRE PRENOM ET NOM </label> <br>
+                <input type="text" placeholder="Exemple DIOP" id="nomcomplet">
+            </form>
+        </div>
+        <div class="fr2">
+            <form>
+                <label for="adresse e-mail">📩 ADRESSE E-MAIL</label> <br>
+                <input type="text" placeholder="Vous@exemple.com" id="adresse e-mail">
+            </form>
+        </div>
+        <div class="num">
+            <form>
+                <label for="num">📞 VOTRE NUMERO DE TELEPHONE</label> <br>
+                <input type="text" placeholder="77 777 77 77" id="num">
+            </form>
+        </div>
+        <div class="date">
+            <label class="date">📅 DATE</label>
+            <input type="date" id="date" placeholder=" ">
+        </div>
+        <div class="heure">
+            <label class="heure">🕐 HEURE</label>
+            <input type="time" id="heure">
+        </div>
+        <div class="nombre">
+            <label class="nombre">👨‍👩‍👧‍👦 NOMBRE DE PERSONNES </label>
+            <input type="nombre" id="nombre" placeholder="Ex: 4">
+        </div>
+        <div class="souvenir">
+            <input type="checkbox" id="souvenir" name="souvenir">
+            <label for="souvenir">Se souvenir de moi</label>
+        </div>
+        <div class="bouton">
+            <button class="btn">Valider la réservation</button>
+        </div>
+    </div>
+     <div class="footeux">
+        <div class="gauche">
+            <h1>A PROPOS</h1>
+            <p><i class="fa fa-location-arrow" aria-hidden="true"></i>
+                Adresse : Route de la corniche des almadies </p>
+            <p><i class="fa fa-address-book" aria-hidden="true"></i>
+                Contactez-nous au : 77 777 77 77 / 33 333 33 33</p>
+            <p><i class="fa fa-envelope" aria-hidden="true"></i>
+                Email : <a href="#">teranga.food@gmail.com</a></p>
+            <p>Copyright © 2026 TERANGA FOOD. Tous droits réservés.</p>
+
+
+        </div>
+        <div class="droite">
+            <h1>EN UN CLIC</h1>
+            <ul>
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="about.html">A PROPOS</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="reservation.html">RESERVER</a></li>
+                <li><a href="galerie.html">GALERIE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
+
 </html>
