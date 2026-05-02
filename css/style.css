@@ -128,7 +128,7 @@
     .contenu img {
         margin-top: 130px;
         height: 550px;
-        width: 1250px;
+        width: 100%;
     }
 
     .btn {
@@ -212,7 +212,6 @@
         background-color: #ecdfcf;
         padding: 10px;
         border-radius: 12px;
-        max-width: 300px;
         text-align: center;
 
     }
@@ -376,15 +375,21 @@
         top: 0;
         background-color: #FFF7ED;
     }
+
+
+
+
+
+
         /* css du site reservation.html */
-         body {
+     body {
         overflow-x: hidden;
         background-color: #FFF7ED;
     }
 
     .formulaire {
         width: 700px;
-        height: 1100px;
+        height: 900px;
         margin: 0 auto;
         border: 1px solid black;
         border-radius: 30px;
@@ -470,6 +475,8 @@
         transition: 0.3s ease;
         border: 1px solid transparent;
         text-align: center;
+        display: block;
+        margin: 30px auto 0 auto;
         background: linear-gradient(135deg, #f19225, #eacaa2);
         color: #ffffff;
         height: 55px;

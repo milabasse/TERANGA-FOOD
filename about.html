@@ -1,12 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .histoire {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hist1 h2,
+        .nv {
+            background-color: #D97706;
+            width: 350px;
+            height: 70px;
+            border-radius: 35px;
+            color: white;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+        }
+
+        .hist1 h3,
+        .hist3 h3,
+        .hist4 h3 {
+            color: black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 22px;
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .hist1 p,
+        .hist4 p {
+            font-size: 20px;
+            text-align: center;
+            line-height: 1.4;
+        }
+
+        .hist2 {
+            display: flex;
+            width: 100%;
+            margin: 0 auto;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .cercle {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            border: 2px solid #D97706;
+            background-color: white;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            transition: 0.3s ease;
+            font-size: 30px;
+            font-style: italic;
+        }
+
+        .cercle:hover,
+        .cercle:focus-visible {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 24px rgba(89, 89, 89, 0.26);
+            outline: none;
+        }
+
+        .hist3 {
+            grid-template-columns: repeat(2, 1fr);
+            display: grid;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .valeurs {
+            border: 1px solid;
+            background-color: white;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 50px;
+            border: 2px solid #D97706;
+        }
+
+        .valeurs p {
+            font-size: 18px;
+        }
+
+        .hist4 {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-content: center;
+            gap: 15px;
+            padding: 0 50px;
+        }
+
+        .service {
+            border: 2px solid #D97706;
+            background-color: white;
+            padding: 10px;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 20px;
+
+        }
+
+        .service img {
+            width: 100%;
+            overflow: hidden;
+            height: 230px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+         @media(max-width:1024px){
+            .service img{ grid-template-columns: repeat(2,1fr);}}
+        @media(max-width:430px){
+            .service img{ grid-template-columns: repeat(1,1fr);}}
+    </style>
 </head>
+
 <body>
-    
+    <!-- le header de notre site -->
+    <div class="top1">
+        <!-- le logo du site  -->
+        <div class="oui">
+            <img src="teranga.jpeg" alt="">
+        </div>
+        <!-- le menu burger -->
+        <div class="content">
+            <input type="checkbox" id="menuToggle" class="menu-checkbox" />
+            <label for="menuToggle" class="menu-toggle" aria-label="Ouvrir le menu">
+                <span></span>
+            </label>
+            <!-- les liens du top  -->
+            <nav class="nav">
+                <a href="index.html">ACCUEIL</a>
+                <a href="about.html">A PROPOS</a>
+                <a href="menu.html">MENU</a>
+                <a href="reservation.html">RESERVER</a>
+                <a href="galerie.html">GALERIE</a>
+            </nav>
+        </div>
+    </div>
+    <div class="histoire">
+        <div class="hist1">
+            <h2>L'histoire de Téranga food</h2>
+            <h3>Le goût authentique du Sénégal</h3>
+            <p>Teranga Food met en avant les saveurs du Sénégal à travers des recettes traditionnelles et modernes.
+                Notre objectif est d'offrir à chaque client une expérience culinaire conviviale et authentique.
+                Tout a commencé dans une petite cuisine familiale à Dakar, où notre fondatrice cuisinait
+                chaque jour pour ses proches. Sa passion pour les saveurs authentiques du Sénégal et son désir de
+                partager l'hospitalité légendaire de son peuple l'ont poussée à ouvrir Teranga Food en 2020.
+                Aujourd'hui, notre restaurant est devenu un lieu de rencontre incontournable, où chaque plat raconte une
+                histoire et chaque repas est une célébration de la culture sénégalaise.</p>
+        </div>
+        <div class="hist2">
+            <div class="cercle">100% Sénégalais</div>
+            <div class="cercle">Fondé en 2020</div>
+            <div class="cercle">NOTE <br>4,7/5</div>
+            <div class="cercle">+1000 Clients satisfaits</div>
+        </div>
+        <h2 class="nv">Nos valeurs</h2>
+        <div class="hist3">
+            <div class="valeurs">
+                <p>⭐</p>
+                <h3>Qualité</h3>
+                <p>Des ingrédients soigneusement sélectionnés pour des plats <br> d'exception à chaque service.</p>
+            </div>
+            <div class="valeurs">
+                <p>🧹</p>
+                <h3>Hygiène</h3>
+                <p>Des standards irréprochables en cuisine et en salle <br>pour votre confort et sécurité.</p>
+            </div>
+            <div class="valeurs">
+                <p>👋</p>
+                <h3>Accueil</h3>
+                <p>La Teranga ,l'hospitalité sénégalaise au cœur de chaque <br> interaction avec nos clients.</p>
+            </div>
+            <div class="valeurs">
+                <p>🏡</p>
+                <h3>Tradition</h3>
+                <p>Des recettes transmises de génération en génération,<br> cuisinées avec amour et authenticité.</p>
+            </div>
+        </div>
+        <h2 class="nv">Notre équipe</h2>
+        <div class="hist4">
+            <!-- <h3>Les visages du Téranga food</h3> -->
+            <div class="service">
+                <img src="per5.jpeg" alt="">
+                <h3>Lili seck</h3>
+                <p>Fondatrice et cheffe du restaurant</p>
+            </div>
+            <div class="service">
+                <img src="per10.jpeg" alt="">
+                <h3>Fatou Niang</h3>
+                <p>Cheffe patissière</p>
+            </div>
+            <div class="service">
+                <img src="per1.jpeg" alt="">
+                <h3>Lamine Leye</h3>
+                <p>Responsable salle</p>
+            </div>
+            <div class="service">
+                <img src="per4.jpeg" alt="">
+                <h3>Abdou Diouf</h3>
+                <p>Serveur</p>
+            </div>
+            <div class="service">
+                <img src="per3.jpeg" alt="">
+                <h3>Marieme Fall</h3>
+                <p>Patissière</p>
+            </div>
+            <div class="service">
+                <img src="per11.jpeg" alt="">
+                <h3>Fatou Diouf</h3>
+                <p>Traiteur</p>
+            </div>
+            <div class="service">
+                <img src="per7.jpeg" alt="">
+                <h3>khady ndiaye</h3>
+                <p>Serveuse</p>
+            </div>
+            <div class="service">
+                <img src="per9.jpeg" alt="">
+                <h3>CHeikh Touré</h3>
+                <p>Livreur</p>
+            </div>
+        </div>
+        </div>
+      <div class="footeux">
+        <div class="gauche">
+            <h1>A PROPOS</h1>
+            <p><i class="fa fa-location-arrow" aria-hidden="true"></i>
+                Adresse : Route de la corniche des almadies </p>
+            <p><i class="fa fa-address-book" aria-hidden="true"></i>
+                Contactez-nous au : 77 777 77 77 / 33 333 33 33</p>
+            <p><i class="fa fa-envelope" aria-hidden="true"></i>
+                Email : <a href="#">teranga.food@gmail.com</a></p>
+            <p>Copyright © 2026 TERANGA FOOD. Tous droits réservés.</p>
+        </div>
+        <div class="droite">
+            <h1>EN UN CLIC</h1>
+            <ul>
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="about.html">A PROPOS</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="reservation.html">RESERVER</a></li>
+                <li><a href="galerie.html">GALERIE</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
+
 </html>
