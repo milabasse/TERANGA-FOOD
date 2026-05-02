@@ -407,17 +407,6 @@
         margin-top: 10px;
         margin-right: 17px;
     }
-
-    .barre {
-        height: 4px;
-        width: 500px;
-        background-color: #D97706;
-        margin-left: 375px;
-        position: absolute;
-        top: 8px;
-        border-radius: 30px;
-    }
-
     .num,
     .fr2,
     .date,
