@@ -12,7 +12,7 @@
         position: fixed;
         width: 100%;
         top: 0;
-        background-color: #FFF7ED;
+        background-color: #7C2D12;
     }
 
     .oui {
@@ -36,7 +36,7 @@
 
     .nav a {
         text-decoration: none;
-        color: #D97706;
+        color: white;
         padding: 10px 16px;
         font-size: 14px;
         font-weight: 600;
@@ -143,6 +143,7 @@
         transition: 0.3s ease;
         border: 1px solid transparent;
         text-align: center;
+
     }
 
     .btn-primary {
@@ -157,7 +158,7 @@
     .btn-primary:hover,
     .btn-primary:focus-visible {
         transform: translateY(-2px);
-        box-shadow: 0 14px 24px rgba(245, 246, 247, 0.26);
+        box-shadow: 0 14px 24px #FBBF24;
         outline: none;
     }
 
@@ -174,7 +175,7 @@
     .btn-secondary:hover,
     .btn-secondary:focus-visible {
         transform: translateY(-2px);
-        box-shadow: 0 14px 24px rgba(245, 246, 247, 0.26);
+        box-shadow: 0 14px 24px #FBBF24;
         background: #f3f8ff;
         outline: none;
     }
@@ -189,13 +190,14 @@
     .contenu2 h1 {
         text-align: center;
         font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #7C2D12;
     }
 
     .barre1 {
         width: 400px;
         height: 2px;
-        margin-left: 410px;
-        background-color: #D97706;
+       margin: auto;
+        background-color: #7C2D12;
     }
 
     .grille {
@@ -234,11 +236,12 @@
 
     .footeux {
         border-top: 1px solid black;
-        background-color: #FFF7ED;
+        background-color: #7C2D12;
         display: grid;
         grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
         padding: 18px;
         text-align: center;
+        color: white;
     }
 
     .gauche a {
@@ -250,13 +253,26 @@
         text-decoration: none;
         color: #D97706;
     }
+
+
+
+
+
+
+
+
+
+
+
+
     /* Css du site menu.html */
-        .menuu{
+    .menuu {
         background-color: #FFF7ED;
         height: 2530px;
         top: 0;
         border: 1px solid transparent;
     }
+
     .menu {
         margin-top: 30px;
         display: grid;
@@ -265,9 +281,11 @@
         gap: 20px;
         padding: 0 50px;
     }
-    .prix{
+
+    .prix {
         color: #FBBF24;
     }
+
     .grid {
         border: 1px solid;
         background-color: white;
@@ -289,13 +307,10 @@
 
     .grid h2 {
         font-size: 38px;
-        color: #bc6705;
+        color: #7C2D12;
         text-decoration: underline;
     }
 
-    .grid p {
-        line-height: 1.7;
-    }
     .grid button {
         display: inline-flex;
         align-items: center;
@@ -318,9 +333,10 @@
     .bt2:hover,
     .bt2:focus-visible {
         transform: translateY(-2px);
-        box-shadow: 0 14px 24px rgba(149, 149, 150, 0.26);
+        box-shadow: 0 4px 14px #FBBF24;
         outline: none;
     }
+
     .menu button {
         height: 50px;
         width: 230px;
@@ -335,7 +351,7 @@
     .topmenu {
         text-align: center;
         font-size: 35px;
-        color: #D97706;
+        color: #7C2D12;
     }
 
     .basmenu {
@@ -348,13 +364,7 @@
         text-decoration: none;
         color: #D97706;
     }
-     .footeux {
-        background-color: #FFF7ED;
-        display: grid;
-        grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
-        padding: 18px;
-        text-align: center;
-    }
+
 
     .gauche a {
         text-decoration: none;
@@ -365,7 +375,8 @@
         text-decoration: none;
         color: #D97706;
     }
-     .top1 {
+
+    .top1 {
         display: flex;
         border-bottom: 1px solid black;
         justify-content: space-around;
@@ -373,7 +384,7 @@
         padding: 10px;
         width: 100%;
         top: 0;
-        background-color: #FFF7ED;
+        background-color: #7C2D12;
     }
 
 
@@ -381,14 +392,18 @@
 
 
 
-        /* css du site reservation.html */
-     body {
+
+
+
+
+    /* css du site reservation.html */
+    body {
         overflow-x: hidden;
         background-color: #FFF7ED;
     }
 
     .formulaire {
-        width: 700px;
+        width: 55%;
         height: 900px;
         margin: 0 auto;
         border: 1px solid black;
@@ -407,6 +422,7 @@
         margin-top: 10px;
         margin-right: 17px;
     }
+
     .num,
     .fr2,
     .date,
@@ -420,14 +436,16 @@
     .both {
         display: flex;
     }
-    .head h1 , .head h3{
-        color: #D97706
+
+    .head h1,
+    .head h3 {
+        color: #7C2D12;
     }
 
     .both h2 {
         font-weight: 900;
         font-size: 35px;
-        color: #D97706
+        color: #7C2D12;
     }
 
     .fr2 input,
@@ -475,6 +493,146 @@
     .btn3:hover,
     .btn3:focus-visible {
         transform: translateY(-2px);
-        box-shadow: 0 14px 24px rgba(71, 71, 71, 0.26);
+        box-shadow: 0 8px 14px #FBBF24;
         outline: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    /* css du site about.html */
+    .histoire {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .hist1 h2,
+    .nv {
+        background-color: #7C2D12;
+        width: 350px;
+        height: 70px;
+        border-radius: 35px;
+        color: white;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .hist1 h3,
+    .hist3 h3,
+    .hist4 h3 {
+        color: #1C1917;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 22px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .hist1 p,
+    .hist4 p {
+        font-size: 20px;
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    .hist2 {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    .cercle {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        border: 2px solid #D97706;
+        background-color: white;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        transition: 0.3s ease;
+        font-size: 30px;
+        font-style: italic;
+    }
+
+    .cercle:hover,
+    .cercle:focus-visible {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 14px #FBBF24;
+        outline: none;
+    }
+
+    .hist3 {
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        gap: 10px;
+        margin-top: 30px;
+    }
+
+    .valeurs {
+        border: 1px solid;
+        background-color: white;
+        border-radius: 12px;
+        text-align: center;
+        margin-bottom: 50px;
+        border: 2px solid #D97706;
+        transition: 0.3s ease;
+    }
+    .valeurs:hover,
+    .valeurs:focus-visible {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px #FBBF24;
+        outline: none;
+       }
+    .service:hover,
+    .service:focus-visible {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px #FBBF24;
+        outline: none;
+    }
+    .valeurs p {
+        font-size: 18px;
+        color: #1C1917;
+    }
+
+    .hist4 {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        gap: 15px;
+        padding: 0 50px;
+    }
+
+    .service {
+        border: 2px solid #D97706;
+        background-color: white;
+        padding: 10px;
+        border-radius: 12px;
+        text-align: center;
+        margin-bottom: 20px;
+        transition: 0.3s ease;
+
+    }
+
+    .service img {
+        width: 100%;
+        overflow: hidden;
+        height: 230px;
+        border-radius: 10px;
+        object-fit: cover;
     }
