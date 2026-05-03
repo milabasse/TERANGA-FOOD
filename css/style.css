@@ -196,7 +196,7 @@
     .barre1 {
         width: 400px;
         height: 2px;
-       margin: auto;
+        margin: auto;
         background-color: #7C2D12;
     }
 
@@ -540,12 +540,12 @@
     }
 
     .hist1 p,
-    .hist4 p {
+    .hist4 p ,li {
         font-size: 20px;
         text-align: center;
         line-height: 1.4;
     }
-
+    
     .hist2 {
         display: flex;
         width: 100%;
@@ -592,18 +592,21 @@
         border: 2px solid #D97706;
         transition: 0.3s ease;
     }
+
     .valeurs:hover,
     .valeurs:focus-visible {
         transform: translateY(-2px);
         box-shadow: 0 4px 8px #FBBF24;
         outline: none;
-       }
+    }
+
     .service:hover,
     .service:focus-visible {
         transform: translateY(-2px);
         box-shadow: 0 4px 8px #FBBF24;
         outline: none;
     }
+
     .valeurs p {
         font-size: 18px;
         color: #1C1917;
@@ -632,7 +635,7 @@
     .service img {
         width: 100%;
         overflow: hidden;
-        height: 230px;
+        height: 250px;
         border-radius: 10px;
         object-fit: cover;
     }
