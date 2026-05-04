@@ -10,7 +10,65 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        .plat {
+            margin-bottom: 50px;
+            gap: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-top: 30px;
 
+        }
+
+        .plate {
+            border: 2px solid #7C2D12;
+            background-color: white;
+            padding: 10px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .plate img {
+            width: 100%;
+            overflow: hidden;
+            height: 400px;
+            border-radius: 10px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .plate h2 {
+            font-size: 38px;
+            color: #7C2D12;
+            text-decoration: underline;
+        }
+
+        .btnmenu,
+        .btntable {
+            padding: 5px;
+            border-radius: 14px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: 0.3s ease;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            margin: 30px auto;
+            background: linear-gradient(135deg, #f19225, #eacaa2);
+            color: white;
+            height: 55px;
+            width: 250px;
+        }
+
+        .btnmenu:hover,
+        .btntable:hover,
+        .btnmenu:focus-visible,
+        .btntable:focus-visible {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 14px #FBBF24;
+            outline: none;
+        }
     </style>
 </head>
 
@@ -38,15 +96,15 @@
         </div>
     </div>
     <input type="checkbox" id="menuToggle" class="menu-checkbox" />
-<label for="menuToggle" class="menu-toggle">
-  <span></span>
-</label>
-<nav class="nav"> ... </nav>
+    <label for="menuToggle" class="menu-toggle">
+        <span></span>
+    </label>
+    <nav class="nav"> ... </nav>
 
     <div class="contenu">
         <div class="grand">
             <!-- la photo de fond et les textes -->
-            <img src="platsombre.jpg" alt="">
+            <img src="riz.jpg" alt="">
             <h1>BIENVENUE CHEZ TERANGA FOOD</h1>
             <h3>Le goût authentique du Sénégal</h3>
             <h2>Découvrez la vraie cuisine sénégalaise</h2>
@@ -60,6 +118,26 @@
         </div>
     </div>
     <div class="contenu2">
+        <h1>Téranga food ,Dakar</h1>
+        <div class="barre1"></div>
+        <div class="hist1">
+            <p>L’âme du Sénégal dans chaque assiette, recettes traditionnelles, produits locaux et
+                hospitalité authentique. <br>
+                Teranga Food est un restaurant sénégalais fondé à Dakar en 2020, spécialisé dans la cuisine
+                traditionnelle et moderne du Sénégal. <br>Notre mission : offrir à chaque client une expérience
+                culinaire
+                authentique, fondée sur la qualité des produits locaux et les valeurs <br>d’hospitalité propres à la
+                culture
+                sénégalaise. <br>Bienvenue à notre table. 🍲</p>
+        </div>
+        <div class="pro">
+            <div class="hist2">
+                <div class="cercle">Cuisine Savoureuse</div>
+                <div class="cercle">Service attentionné</div>
+                <div class="cercle">Ambiance chaleureuse</div>
+                <div class="cercle">hygiène parfaite</div>
+            </div>
+        </div>
         <h1>Notre cuisine , votre satisfaction </h1>
         <div class="barre1"></div>
         <div class="grille">
@@ -82,31 +160,56 @@
                     chaque moment passé chez nous soit inoubliable.</p>
             </div>
         </div>
-        
-    </div>
-    <!-- footeux -->
-    <div class="footeux">
-        <div class="gauche">
-            <h1>A PROPOS</h1>
-            <p><i class="fa fa-location-arrow" aria-hidden="true"></i>
-                Adresse : Route de la corniche des almadies </p>
-            <p><i class="fa fa-address-book" aria-hidden="true"></i>
-                Contactez-nous au : 77 777 77 77 / 33 333 33 33</p>
-            <p><i class="fa fa-envelope" aria-hidden="true"></i>
-                Email : <a href="#">teranga.food@gmail.com</a></p>
-            <p>Copyright © 2026 TERANGA FOOD. Tous droits réservés.</p>
+        <div class="hero-actions">
+            <a href="reservation.html" class="btntable">Réserver dès maintenant</a>
         </div>
-        <div class="droite">
-            <h1>EN UN CLIC</h1>
-            <ul>
-                <li><a href="index.html">ACCUEIL</a></li>
-                <li><a href="about.html">A PROPOS</a></li>
-                <li><a href="menu.html">MENU</a></li>
-                <li><a href="reservation.html">RESERVER</a></li>
-                <li><a href="galerie.html">GALERIE</a></li>
-            </ul>
-        </div>
-    </div>
+        <div>
+            <div>
+                <h1>Les plats populaires</h1>
+                <div class="barre1"></div>
+                <div class="grille">
+                    <div class="bloc"><img src="plat2.jpg" alt="">
+                        <h2>Thiéboudienne</h2>
+                    </div>
+                    <div class="bloc"><img src="yassa.jpeg" alt="">
+                        <h2>Yassa Poulet</h2>
+                    </div>
+                    <div class="bloc"><img src="soupou kandia.jpg" alt="">
+                        <h2>Soupou Kandia</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="hist1">
+                <p>Ces plats ne sont qu’un avant-goût de ce que Teranga Food vous réserve. <br>Notre menu regorge de saveurs authentiques, de recettes généreuses et de découvertes
+                    culinaires qui raviront vos papilles. <br>Ne laissez pas passer l’occasion de vivre une expérience
+                    unique. <br>
+                    Envie d’en découvrir plus ? Consultez notre menu complet , une expérience savoureuse vous attend ! 🍲</p>
+            </div>
+            <div class="hero-actions">
+                <a href="menu.html" class="btnmenu">Découvrir le menu</a>
+            </div>
+            <div class="footeux">
+                <div class="gauche">
+                    <h1>A PROPOS</h1>
+                    <p><i class="fa fa-location-arrow" aria-hidden="true"></i>
+                        Adresse : Route de la corniche des almadies </p>
+                    <p><i class="fa fa-address-book" aria-hidden="true"></i>
+                        Contactez-nous au : 77 777 77 77 / 33 333 33 33</p>
+                    <p><i class="fa fa-envelope" aria-hidden="true"></i>
+                        Email : <a href="#">teranga.food@gmail.com</a></p>
+                    <p>Copyright © 2026 TERANGA FOOD. Tous droits réservés.</p>
+                </div>
+                <div class="droite">
+                    <h1>EN UN CLIC</h1>
+                    <ul>
+                        <li><a href="index.html">ACCUEIL</a></li>
+                        <li><a href="about.html">A PROPOS</a></li>
+                        <li><a href="menu.html">MENU</a></li>
+                        <li><a href="reservation.html">RESERVER</a></li>
+                        <li><a href="galerie.html">GALERIE</a></li>
+                    </ul>
+                </div>
+            </div>
 </body>
 
 </html>

@@ -127,7 +127,7 @@
 
     .contenu img {
         margin-top: 130px;
-        height: 550px;
+        height: 650px;
         width: 100%;
     }
 
@@ -210,8 +210,8 @@
     }
 
     .bloc {
-        border: 1px solid;
-        background-color: #ecdfcf;
+        border: 2px solid #7C2D12;
+        background-color: white ;
         padding: 10px;
         border-radius: 12px;
         text-align: center;
@@ -227,7 +227,8 @@
     }
 
     .bloc h2 {
-        font-size: 48px;
+        font-size: 28px;
+        color: #7C2D12 ;
     }
 
     .bloc p {
@@ -253,7 +254,10 @@
         text-decoration: none;
         color: #D97706;
     }
-
+    .pro{
+        width: 90%;
+       margin: auto;
+    }
 
 
 
@@ -530,7 +534,7 @@
 
     .hist1 h3,
     .hist3 h3,
-    .hist4 h3 {
+    .ma {
         color: #1C1917;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 22px;
