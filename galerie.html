@@ -7,15 +7,76 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-        .galerie {
+        .haute {
+            padding:54px;
+            overflow: hidden;
+            background: linear-gradient(135deg, #7C2D12, #945f4b);
             margin-top: 30px;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            justify-content: center;
-            gap: 20px;
-            padding: 0 50px;
+            margin-bottom: 30px;
         }
 
+        .haute-ecrit {
+            align-items: center;
+            color: white;
+            border: 2px solid #D97706;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            padding: 17px;
+            display: inline-flex;
+            border-radius: 4px;
+            margin-bottom: 24px;
+        }
+
+        .haute h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 72px;
+            font-weight: 700;
+            color: white;
+            line-height: 1.05;
+            margin-bottom: 20px;
+        }
+
+        .haute p {
+            color: white;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.8;
+            max-width: 480px;
+        }
+
+        .galerie , .galerie1{
+            margin-top: 20px;
+            height: 610px;
+            justify-content: center;
+            padding: 20px;
+            display: flex;
+            gap: 12px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .grande img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+        .grande,
+        .petites{
+            flex: 1;
+        }
+        .petites {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        .petites img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
         .grid1 {
             border: 2px solid #D97706;
             background-color: white;
@@ -23,7 +84,6 @@
             border-radius: 12px;
             text-align: center;
             margin-bottom: 50px;
-
         }
 
         .grid1 img {
@@ -38,7 +98,7 @@
 </head>
 
 <body>
-      <!-- le header de notre site -->
+    <!-- le header de notre site -->
     <div class="top1">
         <!-- le logo du site  -->
         <div class="oui">
@@ -60,81 +120,49 @@
             </nav>
         </div>
     </div>
-    <h2 class="nv">Nos plats , Notre fierté</h2>
-    <div class="galerie">
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-    </div>
-    <h2 class="nv">Nos plats , Notre fierté</h2>
-    <div class="galerie">
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-    </div>
-    <h2 class="nv">Nos plats , Notre fierté</h2>
-    <div class="galerie">
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-    </div>
-    <h2 class="nv">Nos plats , Notre fierté</h2>
-    <div class="galerie">
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-    </div>
-    <h2 class="nv">Nos plats , Notre fierté</h2>
-    <div class="galerie">
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-    </div>
-    <h2 class="nv">Nos plats , Notre fierté</h2>
-    <div class="galerie">
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-        <div class="grid1"><img src="soupou kandia.jpg" alt=""></div>
-    </div>
-    <div class="footeux">
-        <div class="gauche">
-            <h1>A PROPOS</h1>
-            <p><i class="fa fa-location-arrow" aria-hidden="true"></i>
-                Adresse : Route de la corniche des almadies </p>
-            <p><i class="fa fa-address-book" aria-hidden="true"></i>
-                Contactez-nous au : 77 777 77 77 / 33 333 33 33</p>
-            <p><i class="fa fa-envelope" aria-hidden="true"></i>
-                Email : <a href="#">teranga.food@gmail.com</a></p>
-            <p>Copyright © 2026 TERANGA FOOD. Tous droits réservés.</p>
+    <section class="haute">
+        <div class="hautee">
+            <div class="haute-ecrit">Notre univers en images</div>
+            <h1>Saveurs,<br>Sourires &<br>Souvenirs</h1>
+            <p>Plongez dans l'ambiance chaleureuse de Teranga Food , nos plats, notre équipe, et les moments précieux
+                partagés avec nos clients.</p>
         </div>
-        <div class="droite">
-            <h1>EN UN CLIC</h1>
-            <ul>
-                <li><a href="index.html">ACCUEIL</a></li>
-                <li><a href="about.html">A PROPOS</a></li>
-                <li><a href="menu.html">MENU</a></li>
-                <li><a href="reservation.html">RESERVER</a></li>
-                <li><a href="galerie.html">GALERIE</a></li>
-            </ul>
+    </section>
+    <h2 class="nv">Décoration intérieure</h2>
+    <div class="galerie">
+        <div class="grande">
+            <img src="interieur.jpg" alt="">
         </div>
+        <div class="petites">
+            <img src="exterieur.jpg" alt="">
+            <img src="cuisine.jpg" alt="">
+            <img src="billard.jpg" alt="">
+            <img src="toilette.jpeg" alt="">
+        </div>
+    </div>
+    <h2 class="nv">Cuisine</h2>
+    <div class="grille">
+        <div class="bloc"><img src="chefaction.jpg" alt=""></div>
+        <div class="bloc"><img src="cuisine.jpg" alt=""></div>
+        <div class="bloc"><img src="plats.jpg" alt=""></div>
+    </div>
+    <h2 class="nv">Nos plats , Notre fierté</h2>
+    <div class="galerie1">
+        <div class="petites">
+            <img src="riz2.jpg" alt="">
+            <img src="mafe.jpg" alt="">
+            <img src="yassa.jpeg" alt="">
+            <img src="poisson.jpeg" alt="">
+        </div>
+        <div class="grande">
+            <img src="brochette.jpg" alt="">
+        </div>
+    </div>
+    <h2 class="nv">Equipe & Clients</h2>
+    <div class="galerie1">
+        <div class="grid"><img src="clients.jpg" alt=""></div>
+        <div class="grid"><img src="clientss.jpg" alt=""></div>
+        <div class="grid"><img src="client.jpg" alt=""></div>
     </div>
 </body>
 
