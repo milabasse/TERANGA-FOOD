@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <style>
         .haute {
-            padding:54px;
+            padding: 54px;
             overflow: hidden;
             background: linear-gradient(135deg, #7C2D12, #945f4b);
             margin-top: 30px;
@@ -45,7 +45,8 @@
             max-width: 480px;
         }
 
-        .galerie , .galerie1{
+        .galerie,
+        .galerie1 {
             margin-top: 20px;
             height: 610px;
             justify-content: center;
@@ -55,16 +56,19 @@
             width: 100%;
             box-sizing: border-box;
         }
+
         .grande img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             border-radius: 12px;
         }
+
         .grande,
-        .petites{
+        .petites {
             flex: 1;
         }
+
         .petites {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -77,6 +81,7 @@
             object-fit: cover;
             border-radius: 12px;
         }
+
         .grid1 {
             border: 2px solid #D97706;
             background-color: white;
@@ -91,6 +96,29 @@
             overflow: hidden;
             height: 400px;
             border-radius: 10px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .ensemble {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 100%;
+            margin: 20px auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .bloca {
+            overflow: hidden;
+            height: 400px;
+            border-radius: 10px;
+        }
+
+        .bloca img {
+            width: 100%;
+            height: 100%;
             object-fit: cover;
             display: block;
         }
@@ -129,6 +157,12 @@
         </div>
     </section>
     <h2 class="nv">Décoration intérieure</h2>
+    <div class="hist1">
+        <h3>Chaque coin de Teranga Food raconte une histoire.</h3>
+        <p>Découvrez nos espaces : une salle lumineuse et végétale, une terrasse extérieure conviviale,une cuisine
+            professionnelle ouverte,<br> une salle de billard pour se détendre, et des toilettes soignées aux finitions
+            élégantes. <br>Chez Teranga Food, le détail compte partout.</p>
+    </div>
     <div class="galerie">
         <div class="grande">
             <img src="interieur.jpg" alt="">
@@ -141,12 +175,23 @@
         </div>
     </div>
     <h2 class="nv">Cuisine</h2>
-    <div class="grille">
-        <div class="bloc"><img src="chefaction.jpg" alt=""></div>
-        <div class="bloc"><img src="cuisine.jpg" alt=""></div>
-        <div class="bloc"><img src="plats.jpg" alt=""></div>
+    <div class="hist1">
+        <h3>Dérrière les plats</h3>
+        <p>Derrière chaque assiette, une équipe passionnée s’affaire dans une cuisine professionnelle équipée aux
+            derniers standards. <br> Feu vif, précision et générosité . C’est notre secret.</p>
+    </div>
+    <div class="ensemble">
+        <div class="bloca"><img src="chefaction.jpg" alt=""></div>
+        <div class="bloca"><img src="cuisine.jpg" alt=""></div>
+        <div class="bloca"><img src="plats.jpg" alt=""></div>
     </div>
     <h2 class="nv">Nos plats , Notre fierté</h2>
+    <div class="hist1">
+        <h3>La vraie cuisine sénégalaise</h3>
+        <p>Des saveurs authentiques mijotées avec passion, des ingrédients frais soigneusement sélectionnés et des
+            recettes transmises de génération en génération. Chaque plat servi chez Teranga Food est une célébration de
+            la richesse culinaire sénégalaise.</p>
+    </div>
     <div class="galerie1">
         <div class="petites">
             <img src="riz2.jpg" alt="">
@@ -159,10 +204,39 @@
         </div>
     </div>
     <h2 class="nv">Equipe & Clients</h2>
-    <div class="galerie1">
-        <div class="grid"><img src="clients.jpg" alt=""></div>
-        <div class="grid"><img src="clientss.jpg" alt=""></div>
-        <div class="grid"><img src="client.jpg" alt=""></div>
+    <div class="hist1">
+        <h3>Complicité équipe - clients</h3>
+        <p>Chez Teranga Food, le service est une vocation. Notre équipe souriante veille à ce que chaque client se sente
+            comme à la maison. Parce que la teranga , l’hospitalité sénégalaise , c’est bien plus qu’un mot. Au fil des
+            visites , une vraie complicité s'installe entre notre équipe et nos clients , une relation de confiance et
+            de chaleur humaine s'installe .</p>
+    </div>
+    <div class="ensemble">
+        <div class="bloca"><img src="clients.jpg" alt=""></div>
+        <div class="bloca"><img src="clientss.jpg" alt=""></div>
+        <div class="bloca"><img src="client.jpg" alt=""></div>
+    </div>
+     <div class="footeux">
+        <div class="gauche">
+            <h1>A PROPOS</h1>
+            <p><i class="fa fa-location-arrow" aria-hidden="true"></i>
+                Adresse : Route de la corniche des almadies </p>
+            <p><i class="fa fa-address-book" aria-hidden="true"></i>
+                Contactez-nous au : 77 777 77 77 / 33 333 33 33</p>
+            <p><i class="fa fa-envelope" aria-hidden="true"></i>
+                Email : <a href="#">teranga.food@gmail.com</a></p>
+            <p>Copyright © 2026 TERANGA FOOD. Tous droits réservés.</p>
+        </div>
+        <div class="droite">
+            <h1>EN UN CLIC</h1>
+            <ul>
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="about.html">A PROPOS</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="reservation.html">RESERVER</a></li>
+                <li><a href="galerie.html">GALERIE</a></li>
+            </ul>
+        </div>
     </div>
 </body>
 
