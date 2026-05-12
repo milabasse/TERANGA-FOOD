@@ -1,6 +1,5 @@
     /* CSS DU SITE INDEX.HTML */
     html {
-        overflow-x: hidden;
         scroll-behavior: smooth;
         margin: 0;
         padding: 0;
@@ -129,18 +128,18 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
-        width: 80%;
+        width: 90%;
     }
 
     .grand h3 {
         color: white;
         font-family: Georgia, 'Times New Roman', Times, serif;
         margin-bottom: 10px;
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .grand h1 {
-        font-size: 50px;
+        font-size: 57px;
         color: white;
         font-family: Georgia, 'Times New Roman', Times, serif;
         margin-bottom: 20px;
@@ -150,7 +149,7 @@
         color: white;
         font-family: Georgia, 'Times New Roman', Times, serif;
         margin-bottom: 20px;
-        font-size: 24px;
+        font-size: 30px;
     }
 
     .grand {
@@ -1199,7 +1198,12 @@
             gap: 12px;
             padding: 10px;
         }
-
+        .barre1 {
+        width: 300px;
+        height: 2px;
+        margin: auto;
+        background-color: #7C2D12;
+    }
 
         .bloca {
             height: 400px;
