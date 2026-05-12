@@ -983,8 +983,8 @@
 
     .bloca {
         overflow: hidden;
-        height: 400px;
-        border-radius: 10px;
+        height: 530px;
+       border-radius: 10px;
     }
 
     .bloca img {
@@ -1071,12 +1071,14 @@
 
         .grande img {
             width: 100%;
-            height: 300px;
+            height: 600px;
         }
 
         .petites {
             grid-template-columns: repeat(2, 1fr);
-            height: auto;
+        }
+        .petites img{
+            height: 500px;
         }
 
         .galerie,
@@ -1089,7 +1091,7 @@
         .footeux {
             grid-template-columns: 1fr;
         }
-         .hero-box {
+        .hero-box {
             margin: 0 auto;
             grid-template-columns: 1fr;
             width: 90%;
@@ -1110,7 +1112,7 @@
         }
 
         .bloca {
-            height: 300px;
+            height: 500px;
         }
     }
 
@@ -1168,7 +1170,7 @@
 
         .grande {
             width: 100%;
-            height: 250px;
+            height: 450px;
         }
 
         .grande img {
@@ -1187,7 +1189,7 @@
 
         .petites img {
             width: 100%;
-            height: 250px;
+            height: 400px;
             object-fit: cover;
             border-radius: 12px;
         }
@@ -1200,7 +1202,7 @@
 
 
         .bloca {
-            height: 250px;
+            height: 400px;
         }
 
         .formulaire {
