@@ -1,6 +1,6 @@
     /* CSS DU SITE INDEX.HTML */
     html {
-        overflow: hidden;
+        overflow-x: hidden;
         scroll-behavior: smooth;
         margin: 0;
         padding: 0;
